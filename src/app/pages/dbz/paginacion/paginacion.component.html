@@ -1,0 +1,12 @@
+<div class="row mt-2 mb-2">
+  <div class="col-12">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item" [ngClass]="{disabled: !previousUrl}"><a class="page-link"
+            (click)="loadPokemons(previousUrl!)">Previous</a></li>
+        <li class="page-item" [ngClass]="{disabled: !nextUrl}"><a class="page-link"
+            (click)="loadPokemons(nextUrl!)">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

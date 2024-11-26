@@ -1,0 +1,57 @@
+/* Estilos generales para la tabla */
+.table {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Estilos para las filas del encabezado */
+.table thead tr {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+}
+
+/* Estilos para las celdas del cuerpo */
+.table tbody tr {
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Hover para las filas */
+.table tbody tr:hover {
+    background: #ffe8ef;
+    cursor: pointer;
+}
+
+/* Estilos para botones */
+.btn-success {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #e63929;
+}

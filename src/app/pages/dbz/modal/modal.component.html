@@ -1,0 +1,41 @@
+<div class="modal fade" #modalElement tabindex="-1" aria-labelledby="pokemonModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pokemonModalLabel">Detalles de {{dbz.name | titlecase}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <img [src]="dbz.image" [alt]="dbz.name" class="img-fluid mb-3">
+              <p><strong>ID:</strong> {{dbz.id}}</p>
+              <p><strong>Afiliacion</strong> {{dbz.affiliation}} dm</p>
+              <p><strong>Ki:</strong> {{dbz.ki}} hg</p>
+              <p><strong>Ki Maximo base:</strong> {{dbz.maxKi}}</p>
+            </div>
+            <div class="col-md-6">
+              <h6>Descripcion:</h6>
+              <ul class="list-unstyled">
+                <p>{{dbz.description}}</p>
+              </ul>
+              <h6>Transformaciones:</h6>
+              <ul class="list-unstyled">
+                <li *ngFor="let transformations of dbz.transformations">
+                  <ul>
+                    <li>
+                      {{transformations.name | titlecase}}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

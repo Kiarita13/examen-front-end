@@ -1,0 +1,51 @@
+<div class="modal fade" #modalElement tabindex="-1" aria-labelledby="viajeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viajeModalLabel">Editar Viaje: {{viaje.destino}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    (click)="closeModal()"></button>
+            </div>
+
+            <div class="modal-body">
+                <label for="destino" class="form-label">Destino</label>
+                <input type="text" id="destino" class="form-control" value="{{viaje.destino}}" #destino>
+
+                <label for="paisSalida" class="form-label">País de Salida</label>
+                <input type="text" id="paisSalida" class="form-control" value="{{viaje.paisSalida}}" #paisSalida>
+
+                <label for="descripcion" class="form-label">Descripción</label>
+                <textarea id="descripcion" class="form-control" #descripcion>{{viaje.descripcion}}</textarea>
+
+                <label for="fechaInicio" class="form-label">Fecha de Inicio</label>
+                <input type="date" id="fechaInicio" class="form-control" [value]="viaje.fechaInicio | date:'yyyy-MM-dd'"
+                    #fechaInicio>
+
+                <label for="fechaFin" class="form-label">Fecha de Fin</label>
+                <input type="date" id="fechaFin" class="form-control" [value]="viaje.fechaFin | date:'yyyy-MM-dd'"
+                    #fechaFin>
+
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" id="precio" class="form-control" value="{{viaje.precio}}" #precio>
+
+                <label for="tipo" class="form-label">Tipo de Viaje</label>
+                <input type="text" id="tipo" class="form-control" value="{{viaje.tipo}}" #tipo>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                    (click)="closeModal()">Cerrar</button>
+                <button type="button" class="btn btn-success" (click)="editarViaje(
+              destino.value,
+              paisSalida.value,
+              descripcion.value,
+              fechaInicio.value,
+              fechaFin.value,
+              precio.value,
+              tipo.value,
+              viaje._id!
+            )">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>

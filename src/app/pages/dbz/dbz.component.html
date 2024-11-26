@@ -1,0 +1,17 @@
+<div class="row-6">
+    <picture>
+        <source srcset="sourceset" type="png" />
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Dragon_Ball_Z_Logo_C.png"
+            class="img-fluid"
+            alt="image desc"
+        />
+    </picture>
+    
+</div>
+<div class="row">
+    <dbz-search (eventSearch)="searchPersonaje($event)"/>
+</div>
+<dbz-paginacion (eventNewDbz)="setNewPersonaje($event)"/>
+<dbz-card [dbzAll]="dbzPersonajes"/>
+<dbz-paginacion (eventNewDbz)="setNewPersonaje($event)"/>

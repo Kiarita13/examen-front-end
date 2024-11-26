@@ -1,0 +1,37 @@
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .pagination {
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.page-item {
+    margin: 0 5px; /* Espaciado entre los elementos de la página */
+}
+
+.page-link {
+    background: linear-gradient(135deg, #3c02dd83, #ffbb45); /* Fondo con gradiente */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado dentro del enlace */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.page-link:hover {
+    background: #ffbb45; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumento al pasar el mouse */
+}
+
+.active {
+    background: #3c02dd; /* Color de fondo para la página activa */
+    color: #fff; /* Color del texto activo */
+    transform: scale(1.05); /* Aumento para el elemento activo */
+}

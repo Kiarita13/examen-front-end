@@ -1,0 +1,65 @@
+.imagenprincipal{
+    width: 350px;
+    height: auto;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #c49a5370, #6c43ddc7); /* Fondo blanco semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid rgba(60, 2, 221, 0.5); /* Borde en color azul */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+.modal-header {
+    background: linear-gradient(135deg,  #ffbb45, #3c02dd83); /* Borde inferior para separación */
+    background-color: rgba(60, 2, 221, 0.1); /* Fondo para la cabecera */
+}
+
+.modal-title {
+    color: #3c02dd; /* Color del título */
+    font-weight: bold; /* Título en negrita */
+}
+
+.btn-close {
+    filter: invert(1); /* Cambia el color del botón de cerrar a blanco */
+}
+
+.modal-body {
+    padding: 20px; /* Espaciado interno */
+}
+
+.img-fluid {
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+h6 {
+    color: #3c02dd; /* Color de los encabezados en el cuerpo */
+    margin-top: 15px; /* Espaciado superior para los encabezados */
+}
+
+p {
+    color: black; /* Color del texto del párrafo */
+}
+
+.list-unstyled li {
+    margin-bottom: 5px; /* Espaciado inferior entre elementos de la lista */
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(60, 2, 221, 0.2); /* Borde superior para separación */
+}
+
+.btn-secondary {
+    background-color: #ffbb45; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    color: #fff; /* Color del texto en el botón */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 187, 69, 0.8); /* Color más claro en hover */
+}
+
+.list-unstyled ul li{
+    color: black;
+}

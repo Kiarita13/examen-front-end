@@ -1,0 +1,17 @@
+<div class="row-6">
+    <picture>
+        <source srcset="sourceset" type="png" />
+        <img
+            src="https://www.pngplay.com/wp-content/uploads/6/Cocktail-PNG-Clipart-Background.png"
+            class="img-fluid"
+            alt="image desc"
+        />
+    </picture>
+    
+</div>
+<div class="row">
+    <cocteles-search (eventEmitTermino)="searchCoctel($event)"/>
+</div>
+<cocteles-paginacion (eventNewCocteles)="setNewCocteles($event)"/>
+<cocteles-card [cocteles]="coctelAll"></cocteles-card>
+<cocteles-paginacion (eventNewCocteles)="setNewCocteles($event)"/>

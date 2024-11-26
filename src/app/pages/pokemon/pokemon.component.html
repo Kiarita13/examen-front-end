@@ -1,0 +1,17 @@
+<div class="row-6">
+    <picture>
+        <source srcset="sourceset" type="svg" />
+        <img
+            src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg"
+            class="img-fluid"
+            alt="image desc"
+        />
+    </picture>
+    
+</div>
+<div class="row">
+    <pokemon-search (eventSearch)="searchPokemon($event)"/>
+</div>
+<pokemon-paginacion (eventNewPokemons)="setNewPokemon($event)" />
+<pokemon-card [pokemonsAll]="pokemons" />
+<pokemon-paginacion (eventNewPokemons)="setNewPokemon($event)" />

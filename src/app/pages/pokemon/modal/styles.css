@@ -1,0 +1,36 @@
+.modal-content {
+  background: linear-gradient(135deg, #c49a5370, #6c43ddc7); 
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+}
+
+.modal-header {
+  background: linear-gradient(135deg,  #ffbb45, #3c02dd83); /* Gradiente para el encabezado */
+  color: #fff; /* Color de texto blanco */
+  border-top-left-radius: 10px; /* Bordes redondeados en la parte superior izquierda */
+  border-top-right-radius: 10px; /* Bordes redondeados en la parte superior derecha */
+}
+
+.modal-title {
+  margin: 0; /* Elimina margen */
+}
+
+.modal-body {
+  color: black; /* Color de texto más oscuro para la legibilidad */
+}
+
+.modal-footer {
+  background: rgba(60, 2, 221, 0.1); /* Fondo más claro para el pie del modal */
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Línea separadora */
+}
+
+.btn-secondary {
+  background-color: #3c02dd; /* Color del botón de cerrar */
+  color: #fff; /* Texto blanco */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.btn-secondary:hover {
+  background-color: rgba(60, 2, 221, 0.8); /* Color más oscuro al pasar el mouse */
+}

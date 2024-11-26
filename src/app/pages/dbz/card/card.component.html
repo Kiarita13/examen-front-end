@@ -1,0 +1,22 @@
+<div class="row mb-3 g-3">
+  <ng-container *ngIf="dbzAll && dbzAll.items && dbzAll.items.length>0"; else noPokemons>
+    <div class="col-3 fondo mx-auto" *ngFor="let dbz of dbzAll.items">
+      <div class="card fixed-card">
+        <img [src]="dbz.data?.image" class="card-img-top fixed-img" alt="..." />
+        <div class="card-body fixed-body">
+          <h5 class="card-title">{{dbz.name.toUpperCase()}}</h5>
+          <p class="card-text">Afiliacion: {{dbz.affiliation}}</p>
+          <i class="btn btn-outline-primary" (click)="openModal(dbz.data!)">Más Información</i>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #noDbz>
+    <div class="col-12">
+      <div class="alert alert-warning" role="alert">
+        No Dbz found
+      </div>
+    </div>
+  </ng-template>
+</div>
+<dbz-modal />
